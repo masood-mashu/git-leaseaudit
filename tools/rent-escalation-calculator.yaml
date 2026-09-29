@@ -1,0 +1,14 @@
+name: "rent-escalation-calculator"
+description: "Calculates escalated annual base rent using contractual fixed percentage or CPI bump"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "rent_escalation_calculator.py"
+parameters:
+  type: "object"
+  properties:
+    escalation_json:
+      type: "string"
+      description: "JSON with current_rent_usd and escalation_pct"
+  required:
+    - "escalation_json"

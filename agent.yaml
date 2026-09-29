@@ -1,0 +1,25 @@
+spec_version: "0.1.0"
+name: "git-leaseaudit"
+version: "0.1.0"
+description: "Autonomous Commercial Real Estate Lease Audit, CAM Reconciliation & Rent Escalation Agent"
+framework: "opengap"
+authors:
+  - name: "masood-mashu"
+    email: "masoodmashu03@gmail.com"
+license: "Apache-2.0"
+
+runtime:
+  language: "python"
+  version: ">=3.10"
+  timeout: 120
+
+tags:
+  - real-estate
+  - lease-audit
+  - cam-reconciliation
+  - rent-escalation
+  - passport-challenge
+
+metadata:
+  passport_id: "aps-leaseaudit-01"
+  passport_category: "Real estate"

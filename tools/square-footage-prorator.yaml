@@ -1,0 +1,14 @@
+name: "square-footage-prorator"
+description: "Computes tenant proportionate share percentage of gross leasable area"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "square_footage_prorator.py"
+parameters:
+  type: "object"
+  properties:
+    area_json:
+      type: "string"
+      description: "JSON with tenant_sqft and building_gla_sqft"
+  required:
+    - "area_json"

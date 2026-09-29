@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "calculate_rent_escalation",
+  "description": "Calculates escalated annual base rent using contractual fixed percentage or CPI bump",
+  "type": "object",
+  "properties": {
+    "escalation_json": {
+      "type": "string",
+      "description": "JSON with current_rent_usd and escalation_pct"
+    }
+  },
+  "required": [
+    "escalation_json"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "audit_cam_reconciliation",
+  "description": "Audits landlord operating expenses against contractual caps and excluded items",
+  "type": "object",
+  "properties": {
+    "cam_data_json": {
+      "type": "string",
+      "description": "JSON with claimed_cam_usd, cap_usd, and excluded_costs_usd"
+    }
+  },
+  "required": [
+    "cam_data_json"
+  ]
+}

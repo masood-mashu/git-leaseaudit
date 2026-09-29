@@ -1,0 +1,14 @@
+name: "cam-reconciliation-auditor"
+description: "Audits landlord operating expenses against contractual caps and excluded items"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "cam_reconciliation_auditor.py"
+parameters:
+  type: "object"
+  properties:
+    cam_data_json:
+      type: "string"
+      description: "JSON with claimed_cam_usd, cap_usd, and excluded_costs_usd"
+  required:
+    - "cam_data_json"

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "calculate_prorated_share",
+  "description": "Computes tenant proportionate share percentage of gross leasable area",
+  "type": "object",
+  "properties": {
+    "area_json": {
+      "type": "string",
+      "description": "JSON with tenant_sqft and building_gla_sqft"
+    }
+  },
+  "required": [
+    "area_json"
+  ]
+}
